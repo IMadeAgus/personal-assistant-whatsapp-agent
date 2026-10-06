@@ -9,7 +9,7 @@ from ai_personal_assistant.settings import settings
 def get_chat_model(temperature: float = 0.7):
     return ChatGroq(
         api_key=settings.GROQ_API_KEY,
-        model_name=settings.TEXT_MODEL_NAME,
+        model=settings.TEXT_MODEL_NAME,
         temperature=temperature,
     )
 
