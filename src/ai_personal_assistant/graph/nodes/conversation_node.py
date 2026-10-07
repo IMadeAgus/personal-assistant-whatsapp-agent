@@ -3,7 +3,9 @@ from langchain_core.runnables import RunnableConfig
 
 from ai_personal_assistant.graph.state import AIPersonalAssistantState
 from ai_personal_assistant.graph.utils.chains import get_character_response_chain
-from ai_personal_assistant.schedules.context_generation import ScheduleContextGenerator
+from ai_personal_assistant.modules.schedules.context_generation import (
+    ScheduleContextGenerator,
+)
 
 
 async def conversation_node(state: AIPersonalAssistantState, config: RunnableConfig):
